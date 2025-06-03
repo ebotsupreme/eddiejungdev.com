@@ -1,22 +1,32 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Global heading styles */
+h1 {
+  @apply text-4xl font-bold tracking-tight mb-4;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+h2 {
+  @apply text-3xl font-semibold tracking-tight mb-3;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+h3 {
+  @apply text-2xl font-medium tracking-tight mb-2;
+}
+
+h4 {
+  @apply text-xl font-medium mb-2;
+}
+
+h5 {
+  @apply text-lg font-medium mb-1;
+}
+
+h6 {
+  @apply text-base font-medium mb-1;
+}
+
+p {
+  @apply mb-4;
 }
 
 body {

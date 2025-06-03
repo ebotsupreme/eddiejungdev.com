@@ -1,3 +1,13 @@
-export default function Home() {
-  return <h1>Hello, Next.js!</h1>;
-}
+import About from "./about/page";
+
+const Home = () => {
+  return (
+    <div>
+      <section id="about">
+        <About />
+      </section>
+    </div>
+  );
+};
+
+export default Home;
