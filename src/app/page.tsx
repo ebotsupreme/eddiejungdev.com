@@ -1,5 +1,6 @@
 import About from "./about/page";
-import Experience from "./experience/page";
+// import Experience from "./experience/page";
+import ResumeInfo from "./ui/experience/resumeInfo";
 
 const Home = () => {
   return (
@@ -8,7 +9,8 @@ const Home = () => {
         <About />
       </section>
       <section id="experience">
-        <Experience />
+        {/* <Experience /> */}
+        <ResumeInfo />
       </section>
     </div>
   );
