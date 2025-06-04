@@ -15,6 +15,7 @@ const AboutMe = () => (
         href={"https://www.pixelmotion.com"}
         target="_blank"
         aria-label="auto industry agencies"
+        className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
       >
         {" "}
         auto industry agencies
@@ -24,6 +25,7 @@ const AboutMe = () => (
         href={"https://www.sunriseintegration.com"}
         target="_blank"
         aria-label="ecommerce start-ups"
+        className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
       >
         ecommerce start-ups
       </Link>{" "}
@@ -32,6 +34,7 @@ const AboutMe = () => (
         href={"https://genvid.com"}
         target="_blank"
         aria-label="game development industries"
+        className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
       >
         game development industries
       </Link>

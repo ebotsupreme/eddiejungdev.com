@@ -1,5 +1,4 @@
 import About from "./about/page";
-// import Experience from "./experience/page";
 import ResumeInfo from "./ui/experience/resumeInfo";
 
 const Home = () => {
@@ -12,7 +11,6 @@ const Home = () => {
         <About />
       </section>
       <section id="experience">
-        {/* <Experience /> */}
         <ResumeInfo />
       </section>
     </div>
