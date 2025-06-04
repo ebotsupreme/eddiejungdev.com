@@ -2,14 +2,14 @@ import Link from "next/link";
 
 const AboutMe = () => (
   <div>
-    <p>
+    <p className="mb-4">
       I&apos;m passionate about creating user interfaces that combine design,
       functionality, and performance.
     </p>
-    <p>
+    <p className="mb-4">
       Currently, I&apos;m a Front-End Engineer looking for new opportunities.{" "}
     </p>
-    <p>
+    <p className="mb-4">
       In the past, I&apos;ve developed software in various industries - from
       <Link
         href={"https://www.pixelmotion.com"}

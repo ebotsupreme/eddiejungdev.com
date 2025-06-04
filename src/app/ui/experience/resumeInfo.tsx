@@ -9,19 +9,22 @@ const ResumeInfo = () => {
       <ol className="group/list">
         {resumeData.map((data, index) => (
           <li key={index} className="mb-12">
-            <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+            <div className="group relative grid items-start pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
               <div className="absolute -inset-x-4 -inset-y-4 lg:-inset-x-6 lg:block" />
-              <header className="sm:col-span-2" aria-label={data.date}>
+              <header
+                className="mt-1 mb-2 text-xs font-semibold uppercase  text-slate-500 sm:col-span-2"
+                aria-label={data.date}
+              >
                 {data.date}
               </header>
               <div className="sm:col-span-6">
-                <h3>
+                <h3 className="font-medium leading-snug text-slate-200">
                   <div>
                     <Link
                       href={data.href}
                       target="_blank"
                       aria-label={data.ariaLabel}
-                      className="inline-flex items-baseline group/link font-medium text-base"
+                      className="inline-flex items-baseline group/link font-medium text-base leading-tight"
                     >
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
                       <span>
@@ -46,7 +49,9 @@ const ResumeInfo = () => {
                     </Link>
                   </div>
                 </h3>
-                <p className="mt-2 text-sm">{data.description}</p>
+                <p className="mt-2 text-sm leading-normal">
+                  {data.description}
+                </p>
                 {/* TODO: Add pill component */}
               </div>
             </div>

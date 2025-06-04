@@ -8,13 +8,15 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body>
+      <body className="font-sans">
         {/* background color / gradient */}
         <div className="flex">
-          <div className="flex justify-center w-full px-20 mx-40">
-            <div className="flex w-full gap-4">
+          <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-16 lg:py-0">
+            <div className="lg:flex lg:justify-between lg:gap-4">
               <Header />
-              <main>{children}</main>
+              <main id="content" className="pt-24 lg:w-[52%] lg:py-24">
+                {children}
+              </main>
             </div>
           </div>
         </div>
