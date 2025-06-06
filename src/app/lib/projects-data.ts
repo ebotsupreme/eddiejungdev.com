@@ -1,9 +1,10 @@
 import { Project } from "./definitions";
 
-export const resumeData: Project[] = [
+export const projectsData: Project[] = [
   {
-    image: "image path here",
-    title: "Project title here",
+    type: "project",
+    image: "/placeholder_image.jpg",
+    title: "Loream ttt",
     description: "Project descrption here",
     href: "Project link here",
     techStack: [
@@ -15,7 +16,8 @@ export const resumeData: Project[] = [
     ],
   },
   {
-    image: "image path here",
+    type: "project",
+    image: "/placeholder_image.jpg",
     title: "Project title here",
     description: "Project descrption here",
     href: "Project link here",
@@ -29,7 +31,8 @@ export const resumeData: Project[] = [
     ],
   },
   {
-    image: "image path here",
+    type: "project",
+    image: "/placeholder_image.jpg",
     title: "Project title here",
     description: "Project descrption here",
     href: "Project link here",
