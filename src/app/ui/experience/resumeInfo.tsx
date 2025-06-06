@@ -26,6 +26,7 @@ const ResumeInfo = () => {
                       href={data.href}
                       target="_blank"
                       aria-label={data.ariaLabel}
+                      rel="noreferrer noopener"
                       className="inline-flex items-baseline group/link font-medium text-base leading-tight text-slate-200 text-shadow-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link"
                     >
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
