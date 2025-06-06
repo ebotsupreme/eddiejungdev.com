@@ -2,6 +2,7 @@ import { Resume } from "./definitions";
 
 export const resumeData: Resume[] = [
   {
+    type: "resume",
     date: "Nov 2021 — Feb 2024",
     title: "Web Developer",
     description:
@@ -20,6 +21,7 @@ export const resumeData: Resume[] = [
     ],
   },
   {
+    type: "resume",
     date: "Apr 2017 — Feb 2021",
     title: "Software Engineer",
     description:
@@ -36,6 +38,7 @@ export const resumeData: Resume[] = [
     ],
   },
   {
+    type: "resume",
     date: "Mar 2016 — Mar 2017",
     title: "Front End Developer",
     description:
