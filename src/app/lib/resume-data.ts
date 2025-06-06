@@ -6,8 +6,8 @@ export const resumeData: Resume[] = [
     title: "Web Developer",
     description:
       "Developed high-performance game UIs with React and TypeScript for The Walking Dead: Last Mile and Silent Hill: Ascension, supporting 10k+ users. Led features, mentored devs, and collaborated in Agile sprints. Integrated Payload CMS with a Node.js backend and improved MongoDB query accuracy by 50%.",
-    href: "https://www.pixelmotion.com",
-    ariaLabel: "Pixel Motion",
+    href: "https://genvid.com",
+    ariaLabel: "Genvid Technologies",
     techStack: [
       "JavaScript",
       "TypeScript",
@@ -40,8 +40,8 @@ export const resumeData: Resume[] = [
     title: "Front End Developer",
     description:
       "Built and maintained dealership websites using WordPress, MODX, jQuery, and Bootstrap. Developed a custom Wordpress plugin for staff management and delivered fast-turnaround updates in Agile sprints.",
-    href: "https://genvid.com",
-    ariaLabel: "Genvid",
+    href: "https://www.pixelmotion.com",
+    ariaLabel: "Pixel Motion",
     techStack: ["JavaScript", "JQuery", "Wordpress", "MODX", "Bootstrap"],
   },
 ];
