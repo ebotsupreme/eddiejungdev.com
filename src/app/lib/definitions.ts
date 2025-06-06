@@ -4,4 +4,5 @@ export type Resume = {
   description: string;
   href: string;
   ariaLabel: string;
+  techStack: string[];
 };

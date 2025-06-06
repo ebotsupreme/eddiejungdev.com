@@ -2,6 +2,7 @@
 
 import { resumeData } from "@/app/lib/resume-data";
 import Link from "next/link";
+import Pill from "../pill/pill";
 
 const ResumeInfo = () => {
   return (
@@ -28,7 +29,7 @@ const ResumeInfo = () => {
                     >
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
                       <span>
-                        {data.title} ·
+                        {data.title} ·{" "}
                         <span className="inline-block">
                           {data.ariaLabel}
                           <svg
@@ -52,7 +53,13 @@ const ResumeInfo = () => {
                 <p className="mt-2 text-sm leading-normal">
                   {data.description}
                 </p>
-                {/* TODO: Add pill component */}
+                <ul className="mt-2 flex flex-wrap">
+                  {data.techStack.map((stack, index) => (
+                    <li key={index} className="mr-1.5 mt-2">
+                      <Pill stack={stack} />
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </li>

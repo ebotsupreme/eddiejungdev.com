@@ -41,8 +41,8 @@ const AboutMe = () => (
       .
     </p>
     <p>
-      My hobbies include: going to concerts, watching tv shows and sports,
-      weightlifting and gaming.
+      I&apos;m usually going to concerts, watching tv shows and sports, hanging
+      out with my wife and dog, weightlifting and gaming.
     </p>
   </div>
 );
