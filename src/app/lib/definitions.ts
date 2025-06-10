@@ -18,3 +18,8 @@ export type Project = BaseList & {
 };
 
 export type Entry = Resume | Project;
+
+export type About = {
+  title: string;
+  href: string;
+};
