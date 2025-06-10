@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { aboutData } from "../lib/about-data";
 import { useState } from "react";
 import clsx from "clsx";
+import { aboutData } from "../lib/about-data";
+import Footer from "./Footer";
 
 const Header = () => {
   const [activeItem, setActiveItem] = useState("About");
@@ -54,7 +55,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-      {/* TODO: Footer */}
+      <Footer />
     </header>
   );
 };
