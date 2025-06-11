@@ -86,7 +86,6 @@ const EntryInfo = ({ entries, type }: EntryProps) => {
       </ol>
       <div className="mt-12">
         <Link
-          // href="/Eddie Jung Resume V4.pdf"
           href={type === "resume" ? "/Eddie Jung Resume V4.pdf" : "/archive"}
           target={type === "resume" ? "_blank" : undefined}
           rel="noopener noreferrer"
