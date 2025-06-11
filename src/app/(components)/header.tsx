@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import clsx from "clsx";
 import { aboutData } from "../lib/about-data";
-import Footer from "./Footer";
+import Footer from "./footer";
 
 const Header = () => {
   const [activeItem, setActiveItem] = useState("About");
