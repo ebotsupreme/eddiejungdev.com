@@ -95,6 +95,7 @@ const EntryInfo = ({ entries, type }: EntryProps) => {
             View Full{" "}
             <span className="inline-block">
               {capitilized(type)}
+              {type === "project" && " Archive"}
               <ArrowUpRightIcon />
             </span>
           </span>

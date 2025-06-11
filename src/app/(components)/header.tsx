@@ -19,8 +19,8 @@ const Header = () => {
           Front End Engineer
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
-          I build web interfaces that combine accessibility, precision, and
-          performance.
+          I specialize in building accessible, high-performance web applications
+          with a focus on clean UI and seamless UX.
         </p>
         <nav className="hidden lg:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">
