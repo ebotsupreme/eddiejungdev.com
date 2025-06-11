@@ -23,3 +23,11 @@ export type About = {
   title: string;
   href: string;
 };
+
+export type ProjectArchive = {
+  project: string;
+  madeAt: string;
+  href: string;
+  techStack: string[];
+  year: string;
+};
