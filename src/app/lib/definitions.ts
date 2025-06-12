@@ -41,3 +41,7 @@ export type HeaderData = {
   title: string;
   componentKey: SectionComponentKey;
 };
+
+export type SectionFooter = About & {
+  header: string;
+};
