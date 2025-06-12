@@ -9,7 +9,7 @@ export const projectArchiveData: ProjectArchive[] = [
     year: "2023 - 2024",
   },
   {
-    project: "PayloadCMS - Internal CMS Tool",
+    project: "PayloadCMS - Internal CMS for Managing Product Data",
     madeAt: "Genvid Technologies",
     href: "https://apps.shopify.com/teelaunch-1",
     techStack: [
