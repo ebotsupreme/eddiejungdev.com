@@ -1,4 +1,3 @@
-// import LayoutShell from "./archive/layout";
 import LayoutShell from "./(components)/layoutShell";
 import "./globals.css";
 

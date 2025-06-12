@@ -1,17 +1,15 @@
-// "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import Pill from "../pill/pill";
 import ArrowUpRightIcon from "../icons/ArrowUpRightIcon";
 import { Entry } from "@/app/lib/definitions";
 
-type EntryProps = {
+type ExperienceProps = {
   entries: Entry[];
   type: string;
 };
 
-const EntryInfo = ({ entries, type }: EntryProps) => {
+const Experience = ({ entries, type }: ExperienceProps) => {
   const capitilized = (word: string): string => {
     return word.charAt(0).toUpperCase() + word.slice(1);
   };
@@ -105,4 +103,4 @@ const EntryInfo = ({ entries, type }: EntryProps) => {
   );
 };
 
-export default EntryInfo;
+export default Experience;

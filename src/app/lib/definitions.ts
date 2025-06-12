@@ -1,3 +1,5 @@
+import { sectionComponents } from "../ui/section/sectionComponents";
+
 export type BaseList = {
   type: string;
   title: string;
@@ -30,4 +32,12 @@ export type ProjectArchive = {
   href: string;
   techStack: string[];
   year: string;
+};
+
+type SectionComponentKey = keyof typeof sectionComponents;
+
+export type HeaderData = {
+  id: string;
+  title: string;
+  componentKey: SectionComponentKey;
 };
