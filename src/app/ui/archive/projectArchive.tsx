@@ -54,7 +54,9 @@ const ProjectArchive = () => {
               className="border-b border-slate-300/10 last:border-none"
             >
               <td className="py-4 pr-4 align-top text-sm">
-                <div className="translate-y-px">{archiveData.year}</div>
+                <div className="translate-y-px whitespace-nowrap">
+                  {archiveData.year}
+                </div>
               </td>
               <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
                 <div className="block sm:hidden">
