@@ -45,3 +45,5 @@ export type HeaderData = {
 export type SectionFooter = About & {
   header: string;
 };
+
+export type SectionAboutMe = SectionFooter;
