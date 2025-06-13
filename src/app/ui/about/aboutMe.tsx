@@ -1,5 +1,6 @@
 import { sectionAboutMeData } from "@/app/lib/section-aboutMe-data";
 import SectionAboutMe from "./sectionAboutMe";
+import Teddy from "./teddy";
 
 const AboutMe = () => (
   <div>
@@ -21,9 +22,9 @@ const AboutMe = () => (
       grow and make an impact.
     </p>
     <p>
-      Outside of work, you’ll usually find me at concerts, watching TV shows or
-      sports, lifting weights, gaming, or spending time with my wife and our
-      dog, Teddy.
+      Outside of work, you&apos;ll usually find me at concerts, watching TV
+      shows or sports, lifting weights, gaming, or spending time with my wife
+      and our dog, <Teddy />.
     </p>
   </div>
 );
