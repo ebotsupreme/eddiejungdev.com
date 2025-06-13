@@ -16,6 +16,10 @@ const ProjectArchive = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  const removeHttpsProtocol = (href: string): string => {
+    return href.replace(/^https?:\/\//, "");
+  };
+
   return (
     <>
       <Link
@@ -54,7 +58,9 @@ const ProjectArchive = () => {
               className="border-b border-slate-300/10 last:border-none"
             >
               <td className="py-4 pr-4 align-top text-sm">
-                <div className="translate-y-px">{archiveData.year}</div>
+                <div className="translate-y-px whitespace-nowrap">
+                  {archiveData.year}
+                </div>
               </td>
               <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
                 <div className="block sm:hidden">
@@ -97,8 +103,7 @@ const ProjectArchive = () => {
                       aria-label={archiveData.madeAt}
                     >
                       <span className="inline-block whitespace-nowrap">
-                        {/* Remove https protocol */}
-                        {archiveData.href.replace(/^https?:\/\//, "")}{" "}
+                        {removeHttpsProtocol(archiveData.href)}{" "}
                         <ArrowUpRightIcon />
                       </span>
                     </Link>
