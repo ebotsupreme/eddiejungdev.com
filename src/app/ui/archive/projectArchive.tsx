@@ -16,6 +16,10 @@ const ProjectArchive = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  const removeHttpsProtocol = (href: string): string => {
+    return href.replace(/^https?:\/\//, "");
+  };
+
   return (
     <>
       <Link
@@ -99,8 +103,7 @@ const ProjectArchive = () => {
                       aria-label={archiveData.madeAt}
                     >
                       <span className="inline-block whitespace-nowrap">
-                        {/* Remove https protocol */}
-                        {archiveData.href.replace(/^https?:\/\//, "")}{" "}
+                        {removeHttpsProtocol(archiveData.href)}{" "}
                         <ArrowUpRightIcon />
                       </span>
                     </Link>
