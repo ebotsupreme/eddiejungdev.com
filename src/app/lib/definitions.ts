@@ -55,9 +55,3 @@ type FooterComponentKey = keyof typeof footerComponents;
 export type FooterData = About & {
   componentKey: FooterComponentKey;
 };
-
-export type TeddyData = {
-  color: string;
-  delay: string;
-  character: string;
-};
