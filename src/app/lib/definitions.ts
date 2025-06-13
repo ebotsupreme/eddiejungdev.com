@@ -1,4 +1,6 @@
 import { sectionComponents } from "../ui/section/sectionComponents";
+import { footerComponents } from "../ui/footer/footerComponents";
+import { PROJECT, RESUME } from "./constants";
 
 export type BaseList = {
   type: string;
@@ -9,13 +11,13 @@ export type BaseList = {
 };
 
 export type Resume = BaseList & {
-  type: "resume";
+  type: typeof RESUME;
   ariaLabel: string;
   date: string;
 };
 
 export type Project = BaseList & {
-  type: "project";
+  type: typeof PROJECT;
   image: string;
 };
 
@@ -47,3 +49,9 @@ export type SectionFooter = About & {
 };
 
 export type SectionAboutMe = SectionFooter;
+
+type FooterComponentKey = keyof typeof footerComponents;
+
+export type FooterData = About & {
+  componentKey: FooterComponentKey;
+};

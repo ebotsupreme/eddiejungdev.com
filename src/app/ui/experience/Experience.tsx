@@ -3,6 +3,7 @@ import Link from "next/link";
 import Pill from "../pill/pill";
 import ArrowUpRightIcon from "../icons/ArrowUpRightIcon";
 import { Entry } from "@/app/lib/definitions";
+import { PROJECT, RESUME } from "@/app/lib/constants";
 
 type ExperienceProps = {
   entries: Entry[];
@@ -10,8 +11,6 @@ type ExperienceProps = {
 };
 
 const Experience = ({ entries, type }: ExperienceProps) => {
-  const RESUME = "resume";
-
   const capitilized = (word: string): string => {
     return word.charAt(0).toUpperCase() + word.slice(1);
   };
@@ -95,7 +94,7 @@ const Experience = ({ entries, type }: ExperienceProps) => {
             View Full{" "}
             <span className="inline-block">
               {capitilized(type)}
-              {type === "project" && " Archive"}
+              {type === PROJECT && " Archive"}
               <ArrowUpRightIcon />
             </span>
           </span>
