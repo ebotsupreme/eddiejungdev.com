@@ -21,7 +21,7 @@ const siteMetadata = {
     url: "https://eddiejungdev.com",
     images: [
       {
-        url: "https://eddiejungdev.com/og-image.png",
+        url: "https://eddiejungdev.com/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Eddie Jung Portfolio",
@@ -33,7 +33,7 @@ const siteMetadata = {
     title: "Eddie Jung's Portfolio",
     description:
       "Eddie Jung is a software engineer who builds accessible, high-performance web apps with a focus on clean UI and seamless UX.",
-    images: ["https://eddiejungdev.com/og-image.png"],
+    images: ["https://eddiejungdev.com/images/og-image.png"],
   },
 };
 

@@ -85,7 +85,7 @@ const Experience = ({ entries, type }: ExperienceProps) => {
       </ol>
       <div className="mt-12">
         <Link
-          href={type === RESUME ? "/eddie-jung-resume.pdf" : "/archive"}
+          href={type === RESUME ? "/resume/eddie-jung-resume.pdf" : "/archive"}
           target={type === RESUME ? "_blank" : undefined}
           rel="noopener noreferrer"
           className="inline-flex items-baseline leading-tight hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
